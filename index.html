@@ -1,0 +1,3200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anon</title>
+    <link rel="shortcut icon" href="./assets/img/blog-1.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="overlay"></div>
+      <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-box">
+          <div class="modal-box__img">
+            <img src="./assets/img/newsletter.png" alt="" width="400" height="400">
+          </div>
+          <div class="modal-box__content">
+            <form action="#">
+              <div class="modal-box__content-title">
+                <h3 class="modal-box__content-title-name">Subscribe Newsletter.</h3>
+                <p class="modal-box__content-title-desc">Subscribe the <b>Anon</b> to get latest products and discount update.
+                </p>
+              </div>
+              <input type="email" name="email" class="modal-box__content-email" placeholder="Email Address" required>
+              <button class="modal-box__content-btn">Subscribe</button>
+            </form>
+          </div>
+          <div class="modal-box__btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="notifi-toast">
+        <div class="notifi-toast-img">
+          <img src="./assets/img/products/jacket-3.jpg" width="80" height="70" alt="">
+        </div>
+        <div class="notifi-toast-detail">
+          <div class="notifi-toast-detail__desc">
+            Someone in new just bought
+          </div>
+          <div class="notifi-toast-detail__name">
+            Rose Gold Earrings
+          </div>
+          <div class="notifi-toast-detail__time">
+            <time datetime="PT2M">2 Minutes</time> ago
+          </div>
+        </div>
+        <div class="notifi-toast-btn">
+          <ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>
+        </div>
+      </div>
+
+      <header id="header">
+        <div class="navbar-social hide-on-mobile">
+          <div class="grid wide">
+            <div class="navbar-social-left__icon hide-on-tablet">
+              <a href="">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+              <a href="">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </div>
+            <div class="navbar-social-center__sale">
+              <p>FREE SHIPPING</p>
+              THIS WEEK ORDER OVER - $55
+            </div>
+            <div class="navbar-social-right__more">
+              <select class="navbar-social-right__more-currency">
+                <option value="">USD $</option>
+                <option value="">EUR €</option>
+              </select>
+              <select class="navbar-social-right__more-lang">
+                <option value="">English</option>
+                <option value="">Vietnamese</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-search">
+          <div class="grid wide">
+            <a href="" class="navbar-search-left">
+              <img
+                src="./assets/img/logo/logo.svg"
+                alt="Anon's logo"
+                width="120"
+                height="36"
+              />
+            </a>
+            <div class="navbar-search-center">
+              <input
+                class="navbar-search-center___input"
+                placeholder="Enter your product name..."
+                name="search"
+                type="search"
+                value=""
+              />
+              <button class="navbar-search-center___btn">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </div>
+            <div class="navbar-search-right hide-on-mobile-tablet">
+              <button class="navbar-search-right__account">
+                <ion-icon name="person-outline"></ion-icon>
+              </button>
+              <button class="navbar-search-right__love">
+                <ion-icon name="heart-outline"></ion-icon>
+                <span class="navbar-search-count">0</span>
+              </button>
+              <button class="navbar-search-right__cart">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+                <span class="navbar-search-count">10</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-menu hide-on-mobile-tablet">
+          <div class="grid wide">
+            <ul class="navbar-menu-list">
+              <li class="navbar-menu-item">
+                <a href="" class="navbar-menu-item__link">home</a>
+              </li>
+              <li class="navbar-menu-item">
+                <a href="" class="navbar-menu-item__link">categories</a>
+                <div class="navbar-menu-item__dropdown1">
+                  <ul class="navbar-menu-item__dropdown1-list">
+                    <li class="navbar-menu-item__dropdown1-item-title">
+                      <a href="#">Electronics</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Desktop</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Laptop</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Camera</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Tablet</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Headphone</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">
+                        <img
+                          src="./assets/img/electronics-banner-1.jpg"
+                          alt=""
+                          width="250p"
+                          height="119"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="navbar-menu-item__dropdown1-list">
+                    <li class="navbar-menu-item__dropdown1-item-title">
+                      <a href="#">Men's</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Formal</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Casual</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Sports</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Jacket</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Sunglasses</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">
+                        <img
+                          src="./assets/img/mens-banner.jpg"
+                          alt=""
+                          width="250p"
+                          height="119"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="navbar-menu-item__dropdown1-list">
+                    <li class="navbar-menu-item__dropdown1-item-title">
+                      <a href="#">Women's</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Formal</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Casual</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Perfume</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Cosmetics</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Bags</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">
+                        <img
+                          src="./assets/img/womens-banner.jpg"
+                          alt=""
+                          width="250p"
+                          height="119"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="navbar-menu-item__dropdown1-list">
+                    <li class="navbar-menu-item__dropdown1-item-title">
+                      <a href="#">Electronics</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Smart Watch</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Smart TV</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Keyboard</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Mouse</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">Microphone</a>
+                    </li>
+                    <li class="navbar-menu-item__dropdown1-item">
+                      <a href="">
+                        <img
+                          src="./assets/img/electronics-banner-2.jpg"
+                          alt=""
+                          width="250p"
+                          height="119"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navbar-menu-item">
+                <a href="" class="navbar-menu-item__link">men's</a>
+                <ul class="navbar-menu-item__dropdown2">
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Shirt</a>
+                  </li>
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Shorts & Jeans</a>
+                  </li>
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Safety Shoes</a>
+                  </li>
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Wallet</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-menu-item">
+                <a href="" class="navbar-menu-item__link">women's</a>
+                <ul class="navbar-menu-item__dropdown2">
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Dress & Frock</a>
+                  </li>
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Earrings</a>
+                  </li>
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Necklace</a>
+                  </li>
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Makeup Kit</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-menu-item">
+                <a href="" class="navbar-menu-item__link">jewelry</a>
+                <ul class="navbar-menu-item__dropdown2">
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Earrings</a>
+                  </li>
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Couple Rings</a>
+                  </li>
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Necklace</a>
+                  </li>
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Bracelets</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-menu-item">
+                <a href="" class="navbar-menu-item__link">perfume</a>
+                <ul class="navbar-menu-item__dropdown2">
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Clothes Perfume</a>
+                  </li>
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Deodorant</a>
+                  </li>
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Flower Fragrance</a>
+                  </li>
+                  <li class="navbar-menu-item__dropdown2-item">
+                    <a href="">Air Freshener</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-menu-item">
+                <a href="" class="navbar-menu-item__link">blog</a>
+              </li>
+              <li class="navbar-menu-item">
+                <a href="" class="navbar-menu-item__link">hot offers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mobile-bottom-nav">
+          <ul class="mobile-bottom-nav__list">
+            <li class="mobile-bottom-nav__item">
+              <ion-icon name="menu-outline"></ion-icon>
+            </li>
+            <li class="mobile-bottom-nav__item">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+                <span class="mobile-bottom-nav__item-count">0</span>
+            </li>
+            <li class="mobile-bottom-nav__item">
+                <a href="#header"><ion-icon name="home-outline"></ion-icon></a>
+            </li>
+            <li class="mobile-bottom-nav__item">
+                <ion-icon name="heart-outline"></ion-icon>
+                <span class="mobile-bottom-nav__item-count">0</span>
+            </li>
+            <li class="mobile-bottom-nav__item">
+                <ion-icon name="grid-outline"></ion-icon>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-nav-menu">
+          <div class="mobile-nav-menu-main">
+            <div class="mobile-nav-menu__heading">
+              <h2 class="mobile-nav-menu__heading-title">menu</h2>
+              <button class="mobile-nav-menu__heading-btn">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+            <ul class="mobile-nav-menu__list">
+              <li class="mobile-nav-menu__item">
+                <a href="">home</a>
+              </li>
+              <li class="mobile-nav-menu__item">
+                <div class="mobile-nav-menu__item-label">
+                  <div class="mobile-nav-menu__item-label-title">men's</div>
+                  <div class="mobile-nav-menu__item-label-cancel">
+                    <ion-icon class="mobile-nav-menu__item-label-cancel-icon-more" name="add-outline"></ion-icon>
+                    <ion-icon class="mobile-nav-menu__item-label-cancel-icon" name="remove-outline"></ion-icon>
+                  </div>
+                </div>
+                <ul class="mobile-nav-menu__submenu-list">
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">shirt</a>
+                  </li>
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">shorts & jeans</a>
+                  </li>
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">safety shoes</a>
+                  </li>
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">wallet</a>
+                  </li>
+                </ul>
+              </li>        
+              <li class="mobile-nav-menu__item">
+                <div class="mobile-nav-menu__item-label">
+                  <div class="mobile-nav-menu__item-label-title">Women's</div>
+                  <div class="mobile-nav-menu__item-label-cancel">
+                    <ion-icon class="mobile-nav-menu__item-label-cancel-icon-more" name="add-outline"></ion-icon>
+                    <ion-icon class="mobile-nav-menu__item-label-cancel-icon" name="remove-outline"></ion-icon>
+                  </div>
+                </div>
+                <ul class="mobile-nav-menu__submenu-list">
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">Dress & Frock</a>
+                  </li>
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">Earrings</a>
+                  </li>
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">Necklace</a>
+                  </li>
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">Makeup Kit</a>
+                  </li>
+                </ul>
+              </li>        
+              <li class="mobile-nav-menu__item">
+                <div class="mobile-nav-menu__item-label">
+                  <div class="mobile-nav-menu__item-label-title">Jewelry</div>
+                  <div class="mobile-nav-menu__item-label-cancel">
+                    <ion-icon class="mobile-nav-menu__item-label-cancel-icon-more" name="add-outline"></ion-icon>
+                    <ion-icon class="mobile-nav-menu__item-label-cancel-icon" name="remove-outline"></ion-icon>
+                  </div>
+                </div>
+                <ul class="mobile-nav-menu__submenu-list">
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">Earrings</a>
+                  </li>
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">Couple Rings</a>
+                  </li>
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">Necklace</a>
+                  </li>
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">Bracelets</a>
+                  </li>
+                </ul>
+              </li>        
+              <li class="mobile-nav-menu__item">
+                <div class="mobile-nav-menu__item-label">
+                  <div class="mobile-nav-menu__item-label-title">Perfume</div>
+                  <div class="mobile-nav-menu__item-label-cancel">
+                    <ion-icon class="mobile-nav-menu__item-label-cancel-icon-more" name="add-outline"></ion-icon>
+                    <ion-icon class="mobile-nav-menu__item-label-cancel-icon" name="remove-outline"></ion-icon>
+                  </div>
+                </div>
+                <ul class="mobile-nav-menu__submenu-list">
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">Clothes Perfume</a>
+                  </li>
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">Deodorant</a>
+                  </li>
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">Flower Fragrance</a>
+                  </li>
+                  <li class="mobile-nav-menu__submenu-item">
+                    <a href="">Air Freshener</a>
+                  </li>
+                </ul>
+              </li>   
+              <li class="mobile-nav-menu__item">
+                <a href="">blog</a>
+              </li>
+              <li class="mobile-nav-menu__item">
+                <a href="">Hot Offers</a>
+              </li>     
+            </ul>
+            <ul class="mobile-nav-menu__bottom-list">
+              <li class="mobile-nav-menu__bottom-item">
+                <div class="mobile-nav-menu__bottom-item-label">
+                  <div class="mobile-nav-menu__bottom-item-label-title">language</div>
+                  <div class="mobile-nav-menu__bottom-item-label-cancel">
+                    <ion-icon name="caret-back-outline"></ion-icon>
+                  </div>
+                </div>
+                <ul class="mobile-nav-menu__bottom-submenu-list">
+                  <li class="mobile-nav-menu__bottom-submenu-item">
+                    <a href="">English</a>
+                  </li>
+                  <li class="mobile-nav-menu__bottom-submenu-item">
+                    <a href="">Vietnamese</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile-nav-menu__bottom-item">
+                <div class="mobile-nav-menu__bottom-item-label">
+                  <div class="mobile-nav-menu__bottom-item-label-title">Currency</div>
+                  <div class="mobile-nav-menu__bottom-item-label-cancel">
+                    <ion-icon name="caret-back-outline"></ion-icon>
+                  </div>
+                </div>
+                <ul class="mobile-nav-menu__bottom-submenu-list">
+                  <li class="mobile-nav-menu__bottom-submenu-item">
+                    <a href="">USD $</a>
+                  </li>
+                  <li class="mobile-nav-menu__bottom-submenu-item">
+                    <a href="">EUR €</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="mobile-nav-menu__social">
+              <li class="mobile-nav-menu__social-icon">
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+              </li>
+              <li class="mobile-nav-menu__social-icon">
+                <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+              </li>
+              <li class="mobile-nav-menu__social-icon">
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+              </li>
+              <li class="mobile-nav-menu__social-icon">
+                <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobile-nav-menu-category">
+            <div class="sidebar-category">
+              <div class="sidebar-category__label">
+                <h2 class="sidebar-category__label-title">CATEGORY</h2>  
+                <button class="sidebar-category__label-btn">
+                  <ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>
+                </button>
+              </div>
+              <li class="sidebar-category__submenu">
+                <button class="sidebar-category__task">
+                  <div class="sidebar-category__task-icon">
+                    <img
+                      src="./assets/img/icons/dress.svg"
+                      alt=""
+                      width="20"
+                    />
+                  </div>
+                  <div class="sidebar-category__task-title">Clothes</div>
+                  <div class="sidebar-category__task-more">
+                    <ion-icon
+                      class="rotate-icon"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </div>
+                </button>
+                <ul class="sidebar-category__list">
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Shirt
+                      </div>
+                      <div class="sidebar-category__item-value">300</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Shorts & Jeans
+                      </div>
+                      <div class="sidebar-category__item-value">60</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Jacket
+                      </div>
+                      <div class="sidebar-category__item-value">50</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Dress & Frock
+                      </div>
+                      <div class="sidebar-category__item-value">87</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-category__submenu">
+                <button class="sidebar-category__task">
+                  <div class="sidebar-category__task-icon">
+                    <img
+                      src="./assets/img/icons/shoes.svg"
+                      alt=""
+                      width="20"
+                    />
+                  </div>
+                  <div class="sidebar-category__task-title">Footwear</div>
+                  <div class="sidebar-category__task-more">
+                    <ion-icon
+                      class="rotate-icon"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </div>
+                </button>
+                <ul class="sidebar-category__list">
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Sports
+                      </div>
+                      <div class="sidebar-category__item-value">300</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Formal
+                      </div>
+                      <div class="sidebar-category__item-value">60</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Casual
+                      </div>
+                      <div class="sidebar-category__item-value">50</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Safety Shoes
+                      </div>
+                      <div class="sidebar-category__item-value">87</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-category__submenu">
+                <button class="sidebar-category__task">
+                  <div class="sidebar-category__task-icon">
+                    <img
+                      src="./assets/img/icons/jewelry.svg"
+                      alt=""
+                      width="20"
+                    />
+                  </div>
+                  <div class="sidebar-category__task-title">Jewelry</div>
+                  <div class="sidebar-category__task-more">
+                    <ion-icon
+                      class="rotate-icon"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </div>
+                </button>
+                <ul class="sidebar-category__list">
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Earrings
+                      </div>
+                      <div class="sidebar-category__item-value">300</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Couple Rings
+                      </div>
+                      <div class="sidebar-category__item-value">60</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Necklace
+                      </div>
+                      <div class="sidebar-category__item-value">50</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-category__submenu">
+                <button class="sidebar-category__task">
+                  <div class="sidebar-category__task-icon">
+                    <img
+                      src="./assets/img/icons/perfume.svg"
+                      alt=""
+                      width="20"
+                    />
+                  </div>
+                  <div class="sidebar-category__task-title">Perfume</div>
+                  <div class="sidebar-category__task-more">
+                    <ion-icon
+                      class="rotate-icon"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </div>
+                </button>
+                <ul class="sidebar-category__list">
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Clothes Perfume
+                      </div>
+                      <div class="sidebar-category__item-value">300 pcs</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Deodorant
+                      </div>
+                      <div class="sidebar-category__item-value">60 pcs</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Jacket
+                      </div>
+                      <div class="sidebar-category__item-value">50 pcs</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Dress & Frock
+                      </div>
+                      <div class="sidebar-category__item-value">87 pcs</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-category__submenu">
+                <button class="sidebar-category__task">
+                  <div class="sidebar-category__task-icon">
+                    <img
+                      src="./assets/img/icons/cosmetics.svg"
+                      alt=""
+                      width="20"
+                    />
+                  </div>
+                  <div class="sidebar-category__task-title">cosmetics</div>
+                  <div class="sidebar-category__task-more">
+                    <ion-icon
+                      class="rotate-icon"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </div>
+                </button>
+                <ul class="sidebar-category__list">
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Shampoo
+                      </div>
+                      <div class="sidebar-category__item-value">300</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Sunscreen
+                      </div>
+                      <div class="sidebar-category__item-value">60</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        JacketBody Wash
+                      </div>
+                      <div class="sidebar-category__item-value">50</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Makeup Kit
+                      </div>
+                      <div class="sidebar-category__item-value">87</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-category__submenu">
+                <button class="sidebar-category__task">
+                  <div class="sidebar-category__task-icon">
+                    <img
+                      src="./assets/img/icons/glasses.svg"
+                      alt=""
+                      width="20"
+                    />
+                  </div>
+                  <div class="sidebar-category__task-title">Glasses</div>
+                  <div class="sidebar-category__task-more">
+                    <ion-icon
+                      class="rotate-icon"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </div>
+                </button>
+                <ul class="sidebar-category__list">
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Sunglasses
+                      </div>
+                      <div class="sidebar-category__item-value">300</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Lenses
+                      </div>
+                      <div class="sidebar-category__item-value">60</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar-category__submenu">
+                <button class="sidebar-category__task">
+                  <div class="sidebar-category__task-icon">
+                    <img
+                      src="./assets/img/icons/bag.svg"
+                      alt=""
+                      width="20"
+                    />
+                  </div>
+                  <div class="sidebar-category__task-title">Bags</div>
+                  <div class="sidebar-category__task-more">
+                    <ion-icon
+                      class="rotate-icon"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <ion-icon name="remove-outline"></ion-icon>
+                  </div>
+                </button>
+                <ul class="sidebar-category__list">
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Shopping Bag
+                      </div>
+                      <div class="sidebar-category__item-value">300</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Gym Backpack
+                      </div>
+                      <div class="sidebar-category__item-value">60</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Purse
+                      </div>
+                      <div class="sidebar-category__item-value">50</div>
+                    </a>
+                  </li>
+                  <li class="sidebar-category__item">
+                    <a href="" class="sidebar-category__item-link">
+                      <div class="sidebar-category__item-title">
+                        Wallet
+                      </div>
+                      <div class="sidebar-category__item-value">87</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </div>
+            <div class="sidebar-best">
+              <h3 class="sidebar-best__label">BEST SELLERS</h3>
+              <ul class="sidebar-best__product-list">
+                <li class="sidebar-best__product-item">
+                  <a href="">
+                    <img src="./assets/img/products/1.jpg" width="75" height="75" class="sidebar-best__product-list-img"></img>
+                  </a>
+                  <div class="sidebar-best__product-list-content">
+                    <a href="">
+                      <div class="sidebar-best__product-list-content-title">Baby Fabric Shoes</div>
+                    </a>
+                    <div class="sidebar-best__product-list-content-rate">
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    </div>
+                    <div class="sidebar-best__product-list-content-price">
+                      <div class="sidebar-best__product-list-content-price-old">$5.00</div>
+                      <div class="sidebar-best__product-list-content-price-new">$12.00</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="sidebar-best__product-item">
+                  <a href="">
+                    <img src="./assets/img/products/2.jpg" width="75" height="75" class="sidebar-best__product-list-img"></img>
+                  </a>
+                  <div class="sidebar-best__product-list-content">
+                    <a href="">
+                      <div class="sidebar-best__product-list-content-title">Men's Hoodies T-Shirt</div>
+                    </a>
+                    <div class="sidebar-best__product-list-content-rate">
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+                    <div class="sidebar-best__product-list-content-price">
+                      <div class="sidebar-best__product-list-content-price-old">$15.00</div>
+                      <div class="sidebar-best__product-list-content-price-new">$7.00</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="sidebar-best__product-item">
+                  <a href="">
+                    <img src="./assets/img/products/3.jpg" width="75" height="75" class="sidebar-best__product-list-img"></img>
+                  </a>
+                  <div class="sidebar-best__product-list-content">
+                    <a href="">
+                      <div class="sidebar-best__product-list-content-title">Girls T-Shirt</div>
+                    </a>
+                    <div class="sidebar-best__product-list-content-rate">
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+                    <div class="sidebar-best__product-list-content-price">
+                      <div class="sidebar-best__product-list-content-price-old">$5.00</div>
+                      <div class="sidebar-best__product-list-content-price-new">$3.00</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="sidebar-best__product-item">
+                  <a href="">
+                    <img src="./assets/img/products/4.jpg" width="75" height="75" class="sidebar-best__product-list-img"></img>
+                  </a>
+                  <div class="sidebar-best__product-list-content">
+                    <a href="">
+                      <div class="sidebar-best__product-list-content-title">Woolen Hat For Men</div>
+                    </a>
+                    <div class="sidebar-best__product-list-content-rate">
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                      <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                    </div>
+                    <div class="sidebar-best__product-list-content-price">
+                      <div class="sidebar-best__product-list-content-price-old">$15.00</div>
+                      <div class="sidebar-best__product-list-content-price-new">$12.00</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        
+      </header>
+
+      <div id="container">
+        <div class="slider">
+          <div class="grid wide">
+            <div class="slider-container__icon">
+              <ion-icon class="slider-container__icon-prev" name="chevron-back-outline"></ion-icon>
+              <ion-icon class="slider-container__icon-next" name="chevron-forward-outline"></ion-icon>
+            </div>
+            <div class="slider-container has-scrollbar">
+              <div class="slider-container_item">
+                <img
+                  class="slider-container_img"
+                  src="./assets/img/banner-1.jpg"
+                  alt=""
+                />
+                <div class="slider-container_content">
+                  <div class="slider-container_content-subtitle">
+                    Trending Item
+                  </div>
+                  <h2 class="slider-container_content-title">
+                    WOMEN'S LATEST FASHION SALE
+                  </h2>
+                  <div class="slider-container_content-price">
+                    starting at $ <b>20</b>.00
+                  </div>
+                  <button class="slider-container_content-btn">shop now</button>
+                </div>
+              </div>
+              <div class="slider-container_item">
+                <img
+                  class="slider-container_img"
+                  src="./assets/img/banner-2.jpg"
+                  alt=""
+                />
+                <div class="slider-container_content">
+                  <div class="slider-container_content-subtitle">
+                    Trending Accessories
+                  </div>
+                  <h2 class="slider-container_content-title">
+                    MODERN SUNGLASSES
+                  </h2>
+                  <div class="slider-container_content-price">
+                    starting at $ <b>15</b>.00
+                  </div>
+                  <button class="slider-container_content-btn">shop now</button>
+                </div>
+              </div>
+              <div class="slider-container_item">
+                <img
+                  class="slider-container_img"
+                  src="./assets/img/banner-3.jpg"
+                  alt=""
+                />
+                <div class="slider-container_content">
+                  <div class="slider-container_content-subtitle">
+                    Sale Offer
+                  </div>
+                  <h2 class="slider-container_content-title">
+                    NEW FASHION SUMMER SALE
+                  </h2>
+                  <div class="slider-container_content-price">
+                    starting at $ <b>29</b>.99
+                  </div>
+                  <button class="slider-container_content-btn">shop now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="category">
+          <div class="grid wide">
+            <div class="row has-scrollbar">
+              <div class="col l-3 m-6 c-12">
+                <div class="category-item">
+                  <div class="category-item__wrap">
+                    <div class="category-item__box">
+                      <img
+                        src="./assets/img/icons/dress.svg"
+                        alt=""
+                        width="30"
+                      />
+                    </div>
+                    <div class="category-item__content">
+                      <div class="category-item__content-heading">
+                        <h3 class="category-item__content-heading-title">
+                          DRESS & FROCK
+                        </h3>
+                        <div class="category-item__content-heading-count">
+                          (53)
+                        </div>
+                      </div>
+                      <a href="#" class="category-item__content-more"
+                        >Show All</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="category-item">
+                  <div class="category-item__wrap">
+                    <div class="category-item__box">
+                      <img
+                        src="./assets/img/icons/coat.svg"
+                        alt=""
+                        width="30"
+                      />
+                    </div>
+                    <div class="category-item__content">
+                      <div class="category-item__content-heading">
+                        <h3 class="category-item__content-heading-title">
+                          WINTER WEAR
+                        </h3>
+                        <div class="category-item__content-heading-count">
+                          (58)
+                        </div>
+                      </div>
+                      <a href="#" class="category-item__content-more"
+                        >Show All</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="category-item">
+                  <div class="category-item__wrap">
+                    <div class="category-item__box">
+                      <img
+                        src="./assets/img/icons/glasses.svg"
+                        alt=""
+                        width="30"
+                      />
+                    </div>
+                    <div class="category-item__content">
+                      <div class="category-item__content-heading">
+                        <h3 class="category-item__content-heading-title">
+                          GLASSES & LENS
+                        </h3>
+                        <div class="category-item__content-heading-count">
+                          (68)
+                        </div>
+                      </div>
+                      <a href="#" class="category-item__content-more"
+                        >Show All</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="category-item">
+                  <div class="category-item__wrap">
+                    <div class="category-item__box">
+                      <img
+                        src="./assets/img/icons/shorts.svg"
+                        alt=""
+                        width="30"
+                      />
+                    </div>
+                    <div class="category-item__content">
+                      <div class="category-item__content-heading">
+                        <h3 class="category-item__content-heading-title">
+                          SHORTS & JEANS
+                        </h3>
+                        <div class="category-item__content-heading-count">
+                          (84)
+                        </div>
+                      </div>
+                      <a href="#" class="category-item__content-more"
+                        >Show All</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="category-item">
+                  <div class="category-item__wrap">
+                    <div class="category-item__box">
+                      <img src="./assets/img/icons/tee.svg" alt="" width="30" />
+                    </div>
+                    <div class="category-item__content">
+                      <div class="category-item__content-heading">
+                        <h3 class="category-item__content-heading-title">
+                          T-SHIRTS
+                        </h3>
+                        <div class="category-item__content-heading-count">
+                          (35)
+                        </div>
+                      </div>
+                      <a href="#" class="category-item__content-more"
+                        >Show All</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="category-item">
+                  <div class="category-item__wrap">
+                    <div class="category-item__box">
+                      <img
+                        src="./assets/img/icons/jacket.svg"
+                        alt=""
+                        width="30"
+                      />
+                    </div>
+                    <div class="category-item__content">
+                      <div class="category-item__content-heading">
+                        <h3 class="category-item__content-heading-title">
+                          JACKET
+                        </h3>
+                        <div class="category-item__content-heading-count">
+                          (16)
+                        </div>
+                      </div>
+                      <a href="#" class="category-item__content-more"
+                        >Show All</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="category-item">
+                  <div class="category-item__wrap">
+                    <div class="category-item__box">
+                      <img
+                        src="./assets/img/icons/watch.svg"
+                        alt=""
+                        width="30"
+                      />
+                    </div>
+                    <div class="category-item__content">
+                      <div class="category-item__content-heading">
+                        <h3 class="category-item__content-heading-title">
+                          WATCH
+                        </h3>
+                        <div class="category-item__content-heading-count">
+                          (27)
+                        </div>
+                      </div>
+                      <a href="#" class="category-item__content-more"
+                        >Show All</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="category-item">
+                  <div class="category-item__wrap">
+                    <div class="category-item__box">
+                      <img src="./assets/img/icons/hat.svg" alt="" width="30" />
+                    </div>
+                    <div class="category-item__content">
+                      <div class="category-item__content-heading">
+                        <h3 class="category-item__content-heading-title">
+                          HAT & CAPS
+                        </h3>
+                        <div class="category-item__content-heading-count">
+                          (39)
+                        </div>
+                      </div>
+                      <a href="#" class="category-item__content-more"
+                        >Show All</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col l-3 m-0 c-0 gutters_pr-0">
+                <div class="sidebar">
+                  <div class="sidebar-category">
+                    <h2 class="sidebar-category__label">CATEGORY</h2>
+                    <li class="sidebar-category__submenu">
+                      <button class="sidebar-category__task">
+                        <div class="sidebar-category__task-icon">
+                          <img
+                            src="./assets/img/icons/dress.svg"
+                            alt=""
+                            width="20"
+                          />
+                        </div>
+                        <div class="sidebar-category__task-title">Clothes</div>
+                        <div class="sidebar-category__task-more">
+                          <ion-icon
+                            class="rotate-icon"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <ion-icon name="remove-outline"></ion-icon>
+                        </div>
+                      </button>
+                      <ul class="sidebar-category__list">
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Shirt
+                            </div>
+                            <div class="sidebar-category__item-value">300</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Shorts & Jeans
+                            </div>
+                            <div class="sidebar-category__item-value">60</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Jacket
+                            </div>
+                            <div class="sidebar-category__item-value">50</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Dress & Frock
+                            </div>
+                            <div class="sidebar-category__item-value">87</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sidebar-category__submenu">
+                      <button class="sidebar-category__task">
+                        <div class="sidebar-category__task-icon">
+                          <img
+                            src="./assets/img/icons/shoes.svg"
+                            alt=""
+                            width="20"
+                          />
+                        </div>
+                        <div class="sidebar-category__task-title">Footwear</div>
+                        <div class="sidebar-category__task-more">
+                          <ion-icon
+                            class="rotate-icon"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <ion-icon name="remove-outline"></ion-icon>
+                        </div>
+                      </button>
+                      <ul class="sidebar-category__list">
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Sports
+                            </div>
+                            <div class="sidebar-category__item-value">300</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Formal
+                            </div>
+                            <div class="sidebar-category__item-value">60</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Casual
+                            </div>
+                            <div class="sidebar-category__item-value">50</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Safety Shoes
+                            </div>
+                            <div class="sidebar-category__item-value">87</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sidebar-category__submenu">
+                      <button class="sidebar-category__task">
+                        <div class="sidebar-category__task-icon">
+                          <img
+                            src="./assets/img/icons/jewelry.svg"
+                            alt=""
+                            width="20"
+                          />
+                        </div>
+                        <div class="sidebar-category__task-title">Jewelry</div>
+                        <div class="sidebar-category__task-more">
+                          <ion-icon
+                            class="rotate-icon"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <ion-icon name="remove-outline"></ion-icon>
+                        </div>
+                      </button>
+                      <ul class="sidebar-category__list">
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Earrings
+                            </div>
+                            <div class="sidebar-category__item-value">300</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Couple Rings
+                            </div>
+                            <div class="sidebar-category__item-value">60</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Necklace
+                            </div>
+                            <div class="sidebar-category__item-value">50</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sidebar-category__submenu">
+                      <button class="sidebar-category__task">
+                        <div class="sidebar-category__task-icon">
+                          <img
+                            src="./assets/img/icons/perfume.svg"
+                            alt=""
+                            width="20"
+                          />
+                        </div>
+                        <div class="sidebar-category__task-title">Perfume</div>
+                        <div class="sidebar-category__task-more">
+                          <ion-icon
+                            class="rotate-icon"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <ion-icon name="remove-outline"></ion-icon>
+                        </div>
+                      </button>
+                      <ul class="sidebar-category__list">
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Clothes Perfume
+                            </div>
+                            <div class="sidebar-category__item-value">300 pcs</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Deodorant
+                            </div>
+                            <div class="sidebar-category__item-value">60 pcs</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Jacket
+                            </div>
+                            <div class="sidebar-category__item-value">50 pcs</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Dress & Frock
+                            </div>
+                            <div class="sidebar-category__item-value">87 pcs</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sidebar-category__submenu">
+                      <button class="sidebar-category__task">
+                        <div class="sidebar-category__task-icon">
+                          <img
+                            src="./assets/img/icons/cosmetics.svg"
+                            alt=""
+                            width="20"
+                          />
+                        </div>
+                        <div class="sidebar-category__task-title">cosmetics</div>
+                        <div class="sidebar-category__task-more">
+                          <ion-icon
+                            class="rotate-icon"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <ion-icon name="remove-outline"></ion-icon>
+                        </div>
+                      </button>
+                      <ul class="sidebar-category__list">
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Shampoo
+                            </div>
+                            <div class="sidebar-category__item-value">300</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Sunscreen
+                            </div>
+                            <div class="sidebar-category__item-value">60</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              JacketBody Wash
+                            </div>
+                            <div class="sidebar-category__item-value">50</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Makeup Kit
+                            </div>
+                            <div class="sidebar-category__item-value">87</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sidebar-category__submenu">
+                      <button class="sidebar-category__task">
+                        <div class="sidebar-category__task-icon">
+                          <img
+                            src="./assets/img/icons/glasses.svg"
+                            alt=""
+                            width="20"
+                          />
+                        </div>
+                        <div class="sidebar-category__task-title">Glasses</div>
+                        <div class="sidebar-category__task-more">
+                          <ion-icon
+                            class="rotate-icon"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <ion-icon name="remove-outline"></ion-icon>
+                        </div>
+                      </button>
+                      <ul class="sidebar-category__list">
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Sunglasses
+                            </div>
+                            <div class="sidebar-category__item-value">300</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Lenses
+                            </div>
+                            <div class="sidebar-category__item-value">60</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sidebar-category__submenu">
+                      <button class="sidebar-category__task">
+                        <div class="sidebar-category__task-icon">
+                          <img
+                            src="./assets/img/icons/bag.svg"
+                            alt=""
+                            width="20"
+                          />
+                        </div>
+                        <div class="sidebar-category__task-title">Bags</div>
+                        <div class="sidebar-category__task-more">
+                          <ion-icon
+                            class="rotate-icon"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <ion-icon name="remove-outline"></ion-icon>
+                        </div>
+                      </button>
+                      <ul class="sidebar-category__list">
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Shopping Bag
+                            </div>
+                            <div class="sidebar-category__item-value">300</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Gym Backpack
+                            </div>
+                            <div class="sidebar-category__item-value">60</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Purse
+                            </div>
+                            <div class="sidebar-category__item-value">50</div>
+                          </a>
+                        </li>
+                        <li class="sidebar-category__item">
+                          <a href="" class="sidebar-category__item-link">
+                            <div class="sidebar-category__item-title">
+                              Wallet
+                            </div>
+                            <div class="sidebar-category__item-value">87</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </div>
+                  <div class="sidebar-best">
+                    <h3 class="sidebar-best__label">BEST SELLERS</h3>
+                    <ul class="sidebar-best__product-list">
+                      <li class="sidebar-best__product-item">
+                        <a href="">
+                          <img src="./assets/img/products/1.jpg" width="75" height="75" class="sidebar-best__product-list-img"></img>
+                        </a>
+                        <div class="sidebar-best__product-list-content">
+                          <a href="">
+                            <div class="sidebar-best__product-list-content-title">Baby Fabric Shoes</div>
+                          </a>
+                          <div class="sidebar-best__product-list-content-rate">
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                          </div>
+                          <div class="sidebar-best__product-list-content-price">
+                            <div class="sidebar-best__product-list-content-price-old">$5.00</div>
+                            <div class="sidebar-best__product-list-content-price-new">$12.00</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="sidebar-best__product-item">
+                        <a href="">
+                          <img src="./assets/img/products/2.jpg" width="75" height="75" class="sidebar-best__product-list-img"></img>
+                        </a>
+                        <div class="sidebar-best__product-list-content">
+                          <a href="">
+                            <div class="sidebar-best__product-list-content-title">Men's Hoodies T-Shirt</div>
+                          </a>
+                          <div class="sidebar-best__product-list-content-rate">
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+                          </div>
+                          <div class="sidebar-best__product-list-content-price">
+                            <div class="sidebar-best__product-list-content-price-old">$15.00</div>
+                            <div class="sidebar-best__product-list-content-price-new">$7.00</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="sidebar-best__product-item">
+                        <a href="">
+                          <img src="./assets/img/products/3.jpg" width="75" height="75" class="sidebar-best__product-list-img"></img>
+                        </a>
+                        <div class="sidebar-best__product-list-content">
+                          <a href="">
+                            <div class="sidebar-best__product-list-content-title">Girls T-Shirt</div>
+                          </a>
+                          <div class="sidebar-best__product-list-content-rate">
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+                          </div>
+                          <div class="sidebar-best__product-list-content-price">
+                            <div class="sidebar-best__product-list-content-price-old">$5.00</div>
+                            <div class="sidebar-best__product-list-content-price-new">$3.00</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="sidebar-best__product-item">
+                        <a href="">
+                          <img src="./assets/img/products/4.jpg" width="75" height="75" class="sidebar-best__product-list-img"></img>
+                        </a>
+                        <div class="sidebar-best__product-list-content">
+                          <a href="">
+                            <div class="sidebar-best__product-list-content-title">Woolen Hat For Men</div>
+                          </a>
+                          <div class="sidebar-best__product-list-content-rate">
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                          </div>
+                          <div class="sidebar-best__product-list-content-price">
+                            <div class="sidebar-best__product-list-content-price-old">$15.00</div>
+                            <div class="sidebar-best__product-list-content-price-new">$12.00</div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-9 m-12 c-12 gutters_pl-30">
+
+                <div class="row gutters_mlr-m10">
+                  <div class="col l-4 m-6 c-12 gutters_plr-10">
+                    <div class="product-showcase">
+                      <h2 class="product-showcase__label">New Arrivals</h2>
+                      <div class="product-showcase__grid has-scrollbar">
+                        <ul class="product-showcase__grid-list">
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/clothes-1.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Relaxed Short full Sleeve T-Shirt</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Clothes</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$45.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$12.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/clothes-2.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Girls pnk Embro design Top</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Clothes</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$61.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$9.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/clothes-3.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Black Floral Wrap Midi Skirt</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Clothes</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$76.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$25.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/clothes-4.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Pure Garment Dyed Cotton Shirt</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Clothes</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$68.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$31.00</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="product-showcase__grid-list">
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/jacket-1.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">MEN Yarn Fleece Full-Zip Jacket</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Winter Wear</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$61.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$11.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/jacket-2.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Mens Winter Leathers Jackets</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Winter Wear</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$32.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$20.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/jacket-3.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Mens Winter Leathers Jackets</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Jackets</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$50.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$25.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/shorts-1.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Better Basics French Terry Sweatshorts</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Short</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$20.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$10.00</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col l-4 m-6 c-12 gutters_plr-10">
+                    <div class="product-showcase">
+                      <h2 class="product-showcase__label">Trending</h2>
+                      <div class="product-showcase__grid has-scrollbar">
+                        <ul class="product-showcase__grid-list">
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/sports-1.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Running & Trekking Shoes - White</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Sports</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$49.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$15.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/sports-2.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Trekking & Running Shoes - black</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Sports</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$78.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$35.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/party-wear-1.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Womens Party Wear Shoes</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Party Wear</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$94.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$42.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/sports-3.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Sports Claw Women's Shoes</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Sports</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$54.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$64.00</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="product-showcase__grid-list">
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/sports-6.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Air Trekking Shoes - white</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Clothes</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$52.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$55.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/shoe-3.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Boot With Suede Detail</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Boots</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$20.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$30.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/shoe-1.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Men's Leather Formal Wear shoes</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Formal</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$56.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$70.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/shoe-2.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Casual Men's Brown shoes</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Casual</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$50.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$55.00</div>
+                              </div>
+                            </div>
+                          </li> 
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col l-4 m-o-3 m-6 c-12 gutters_plr-10">
+                    <div class="product-showcase">
+                      <h2 class="product-showcase__label">Top Rated</h2>
+                      <div class="product-showcase__grid has-scrollbar">
+                        <ul class="product-showcase__grid-list">
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/watch-3.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Pocket Watch Leather Pouch</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Watches</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$50.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$34.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/jewellery-3.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Silver Deer Heart Necklace</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Jewellery</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$84.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$30.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/perfume.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Titan 100 Ml Womens Perfume</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Perfume</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$42.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$10.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/belt.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Men's Leather Reversible Belt</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Belt</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$24.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$10.00</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="product-showcase__grid-list">
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/jewellery-2.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">platinum Zircon Classic Ring</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Jewellery</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$62.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$65.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/watch-1.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Smart watche Vital Plus</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Watches</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$56.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$78.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/shampoo.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">shampoo conditioner packs</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Cosmetics</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$20.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$30.00</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="product-showcase__grid-item">
+                            <a href="">
+                              <img src="./assets/img/products/jewellery-1.jpg" width="70" alt="" class="product-showcase__grid-item-img">
+                            </a>
+                            <div class="product-showcase__grid-item-content">
+                              <a href="" class="">
+                                <h4 class="product-showcase__grid-item-content-title">Rose Gold Peacock Earrings</h4>
+                              </a>
+                              <a href="" class="">
+                                <div class="product-showcase__grid-item-content-category">Jewellery</div>
+                              </a>
+                              <div class="product-showcase__grid-item-content-price">
+                                <div class="product-showcase__grid-item-content-price-new">$20.00</div>
+                                <div class="product-showcase__grid-item-content-price-old">$30.00</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row gutters_mlr-m10">
+                <div class="col l-12 m-12 c-12 gutters_plr-10">
+                  <div class="product-deal">
+                    <h2 class="product-deal__label">Deal Of The Day</h2>
+                    <li class="product-deal__list has-scrollbar">
+                      
+                      <ul class="product-deal__item">
+                        <img src="./assets/img/products/shampoo.jpg" alt="" class="product-deal__img">
+                        <div class="product-deal__content">
+                          <div class="product-deal__content-rate">
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </div>
+                          <a href="">
+                            <h3 class="product-deal__content-title">SHAMPOO, CONDITIONER & FACEWASH PACKS</h3>
+                          </a>
+                          <div class="product-deal__content-description">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet consectetur Lorem ipsum dolor</div>
+                          <div class="product-deal__content-price">
+                            <div class="product-deal__content-price-new">$150.00</div>
+                            <div class="product-deal__content-price-old">$200.00</div>
+                          </div>
+                          <div class="product-deal__content-btn">add to cart</div>
+                          <div class="product-deal__content-amount">
+                            <div class="product-deal__content-amount-already">ALREADY SOLD: <p>20</p></div>
+                            <div class="product-deal__content-amount-available">AVAILABLE: <p>40</p></div>
+                          </div>
+                          <div class="product-deal__content-bar"></div>
+                          <div class="product-deal__content-countdown">
+                            <div class="product-deal__content-countdown-title">HURRY UP! OFFER ENDS IN:</div>
+                            <li class="product-deal__content-countdown-list">
+                              <ul class="product-deal__content-countdown-item">
+                                <div class="product-deal__content-countdown-num">360</div>
+                                <div class="product-deal__content-countdown-count">days</div>
+                              </ul>
+                              <ul class="product-deal__content-countdown-item">
+                                <div class="product-deal__content-countdown-num">24</div>
+                                <div class="product-deal__content-countdown-count">hours</div>
+                              </ul>
+                              <ul class="product-deal__content-countdown-item">
+                                <div class="product-deal__content-countdown-num">59</div>
+                                <div class="product-deal__content-countdown-count">min</div>
+                              </ul>
+                              <ul class="product-deal__content-countdown-item">
+                                <div class="product-deal__content-countdown-num">00</div>
+                                <div class="product-deal__content-countdown-count">sec</div>
+                              </ul>
+                            </li>
+                          </div>
+                        </div>
+                      </ul>
+                      <ul class="product-deal__item">
+                        <img src="./assets/img/products/jewellery-1.jpg" alt="" class="product-deal__img">
+                        <div class="product-deal__content">
+                          <div class="product-deal__content-rate">
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </div>
+                          <a href="">
+                            <h3 class="product-deal__content-title">Rose Gold diamonds Earring</h3>
+                          </a>
+                          <div class="product-deal__content-description">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet consectetur Lorem ipsum dolor</div>
+                          <div class="product-deal__content-price">
+                            <div class="product-deal__content-price-new">$1990.00</div>
+                            <div class="product-deal__content-price-old">$2000.00</div>
+                          </div>
+                          <div class="product-deal__content-btn">add to cart</div>
+                          <div class="product-deal__content-amount">
+                            <div class="product-deal__content-amount-already">ALREADY SOLD: <p>20</p></div>
+                            <div class="product-deal__content-amount-available">AVAILABLE: <p>40</p></div>
+                          </div>
+                          <div class="product-deal__content-bar"></div>
+                          <div class="product-deal__content-countdown">
+                            <div class="product-deal__content-countdown-title">HURRY UP! OFFER ENDS IN:</div>
+                            <li class="product-deal__content-countdown-list">
+                              <ul class="product-deal__content-countdown-item">
+                                <div class="product-deal__content-countdown-num">360</div>
+                                <div class="product-deal__content-countdown-count">days</div>
+                              </ul>
+                              <ul class="product-deal__content-countdown-item">
+                                <div class="product-deal__content-countdown-num">24</div>
+                                <div class="product-deal__content-countdown-count">hours</div>
+                              </ul>
+                              <ul class="product-deal__content-countdown-item">
+                                <div class="product-deal__content-countdown-num">59</div>
+                                <div class="product-deal__content-countdown-count">min</div>
+                              </ul>
+                              <ul class="product-deal__content-countdown-item">
+                                <div class="product-deal__content-countdown-num">00</div>
+                                <div class="product-deal__content-countdown-count">sec</div>
+                              </ul>
+                            </li>
+                          </div>
+                        </div>
+                      </ul>
+
+                    </li>
+                  </div>
+                </div>
+                </div>
+
+                <div class="row gutters_mlr-m10">
+                <div class="col l-12 m-12 c-12 gutters_plr-10">
+                  <div class="product-main">
+                    <h2 class="product-main__label">New Products</h2>
+                    <div class="row">
+
+                      <div class="col l-3 m-6 c-12 gutters_plr-15">
+                        <div class="product-main-box">
+                          <div class="product-main-box-banner">
+                            <img src="./assets/img/products/jacket-3.jpg" width="300" alt="" class="product-main-box-banner__img default">
+                            <img src="./assets/img/products/jacket-4.jpg" width="300" alt="" class="product-main-box-banner__img hover">
+                            <div class="product-main-box-banner__discount">15%</div>
+                            <div class="product-main-box-banner__actions">
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="heart-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="bag-add-outline"></ion-icon>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-main-box-content">
+                            <div class="product-main-box-content__title"><a href="">JACKET</a></div>
+                            <div class="product-main-box-content__description"><a href="">Mens Winter Leathers Jackets</a></div>
+                            <div class="product-main-box-content__rate">
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                            </div>
+                            <div class="product-main-box-content__price">
+                              <div class="product-main-box-content__price-new">$48.00</div>
+                              <div class="product-main-box-content__price-old">$75.00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-3 m-6 c-12 gutters_plr-15">
+                        <div class="product-main-box">
+                          <div class="product-main-box-banner">
+                            <img src="./assets/img/products/shirt-1.jpg" width="300" alt="" class="product-main-box-banner__img default">
+                            <img src="./assets/img/products/shirt-2.jpg" width="300" alt="" class="product-main-box-banner__img hover">
+                            <div class="product-main-box-banner__angle black">sale</div>
+                            <div class="product-main-box-banner__actions">
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="heart-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="bag-add-outline"></ion-icon>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-main-box-content">
+                            <div class="product-main-box-content__title"><a href="">shirt</a></div>
+                            <div class="product-main-box-content__description"><a href="">Pure Garment Dyed Cotton Shirt</a></div>
+                            <div class="product-main-box-content__rate">
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+
+                            </div>
+                            <div class="product-main-box-content__price">
+                              <div class="product-main-box-content__price-new">$45.00</div>
+                              <div class="product-main-box-content__price-old">$56.00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-3 m-6 c-12 gutters_plr-15">
+                        <div class="product-main-box">
+                          <div class="product-main-box-banner">
+                            <img src="./assets/img/products/jacket-5.jpg" width="300" alt="" class="product-main-box-banner__img default">
+                            <img src="./assets/img/products/jacket-6.jpg" width="300" alt="" class="product-main-box-banner__img hover">
+                            <div class="product-main-box-banner__actions">
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="heart-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="bag-add-outline"></ion-icon>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-main-box-content">
+                            <div class="product-main-box-content__title"><a href="">JACKET</a></div>
+                            <div class="product-main-box-content__description"><a href="">MEN Yarn Fleece Full-Zip Jacket</a></div>
+                            <div class="product-main-box-content__rate">
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                            </div>
+                            <div class="product-main-box-content__price">
+                              <div class="product-main-box-content__price-new">$48.00</div>
+                              <div class="product-main-box-content__price-old">$65.00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-3 m-6 c-12 gutters_plr-15">
+                        <div class="product-main-box">
+                          <div class="product-main-box-banner">
+                            <img src="./assets/img/products/clothes-3.jpg" width="300" alt="" class="product-main-box-banner__img default">
+                            <img src="./assets/img/products/clothes-4.jpg" width="300" alt="" class="product-main-box-banner__img hover">
+                            <div class="product-main-box-banner__angle pink">new</div>
+                            <div class="product-main-box-banner__actions">
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="heart-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="bag-add-outline"></ion-icon>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-main-box-content">
+                            <div class="product-main-box-content__title"><a href="">skirt</a></div>
+                            <div class="product-main-box-content__description"><a href="">Black Floral Wrap Midi Skirt</a></div>
+                            <div class="product-main-box-content__rate">
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            </div>
+                            <div class="product-main-box-content__price">
+                              <div class="product-main-box-content__price-new">$25.00</div>
+                              <div class="product-main-box-content__price-old">$35.00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-3 m-6 c-12 gutters_plr-15">
+                        <div class="product-main-box">
+                          <div class="product-main-box-banner">
+                            <img src="./assets/img/products/shoe-2.jpg" width="300" alt="" class="product-main-box-banner__img default">
+                            <img src="./assets/img/products/shoe-2_1.jpg" width="300" alt="" class="product-main-box-banner__img hover">
+                            <div class="product-main-box-banner__actions">
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="heart-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="bag-add-outline"></ion-icon>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-main-box-content">
+                            <div class="product-main-box-content__title"><a href="">casual</a></div>
+                            <div class="product-main-box-content__description"><a href="">Casual Men's Brown shoes</a></div>
+                            <div class="product-main-box-content__rate">
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                            </div>
+                            <div class="product-main-box-content__price">
+                              <div class="product-main-box-content__price-new">$99.00</div>
+                              <div class="product-main-box-content__price-old">$105.00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-3 m-6 c-12 gutters_plr-15">
+                        <div class="product-main-box">
+                          <div class="product-main-box-banner">
+                            <img src="./assets/img/products/watch-3.jpg" width="300" alt="" class="product-main-box-banner__img default">
+                            <img src="./assets/img/products/watch-4.jpg" width="300" alt="" class="product-main-box-banner__img hover">
+                            <div class="product-main-box-banner__angle black">sale</div>
+                            <div class="product-main-box-banner__actions">
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="heart-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="bag-add-outline"></ion-icon>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-main-box-content">
+                            <div class="product-main-box-content__title"><a href="">watches</a></div>
+                            <div class="product-main-box-content__description"><a href="">Pocket Watch Leather Pouch</a></div>
+                            <div class="product-main-box-content__rate">
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                            </div>
+                            <div class="product-main-box-content__price">
+                              <div class="product-main-box-content__price-new">$150.00</div>
+                              <div class="product-main-box-content__price-old">$170.00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-3 m-6 c-12 gutters_plr-15">
+                        <div class="product-main-box">
+                          <div class="product-main-box-banner">
+                            <img src="./assets/img/products/watch-1.jpg" width="300" alt="" class="product-main-box-banner__img default">
+                            <img src="./assets/img/products/watch-2.jpg" width="300" alt="" class="product-main-box-banner__img hover">
+                            <div class="product-main-box-banner__actions">
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="heart-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="bag-add-outline"></ion-icon>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-main-box-content">
+                            <div class="product-main-box-content__title"><a href="">watches</a></div>
+                            <div class="product-main-box-content__description"><a href="">Smart watche Vital Plus</a></div>
+                            <div class="product-main-box-content__rate">
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                            </div>
+                            <div class="product-main-box-content__price">
+                              <div class="product-main-box-content__price-new">$100.00</div>
+                              <div class="product-main-box-content__price-old">$120.00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-3 m-6 c-12 gutters_plr-15">
+                        <div class="product-main-box">
+                          <div class="product-main-box-banner">
+                            <img src="./assets/img/products/party-wear-1.jpg" width="300" alt="" class="product-main-box-banner__img default">
+                            <img src="./assets/img/products/party-wear-2.jpg" width="300" alt="" class="product-main-box-banner__img hover">
+                            <div class="product-main-box-banner__angle black">sale</div>
+                            <div class="product-main-box-banner__actions">
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="heart-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="bag-add-outline"></ion-icon>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-main-box-content">
+                            <div class="product-main-box-content__title"><a href="">party wear</a></div>
+                            <div class="product-main-box-content__description"><a href="">Womens Party Wear Shoes</a></div>
+                            <div class="product-main-box-content__rate">
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                            </div>
+                            <div class="product-main-box-content__price">
+                              <div class="product-main-box-content__price-new">$25.00</div>
+                              <div class="product-main-box-content__price-old">$30.00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-3 m-6 c-12 gutters_plr-15">
+                        <div class="product-main-box">
+                          <div class="product-main-box-banner">
+                            <img src="./assets/img/products/jacket-1.jpg" width="300" alt="" class="product-main-box-banner__img default">
+                            <img src="./assets/img/products/jacket-2.jpg" width="300" alt="" class="product-main-box-banner__img hover">
+                            <div class="product-main-box-banner__angle black">sale</div>
+                            <div class="product-main-box-banner__actions">
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="heart-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="bag-add-outline"></ion-icon>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-main-box-content">
+                            <div class="product-main-box-content__title"><a href="">JACKET</a></div>
+                            <div class="product-main-box-content__description"><a href="">Mens Winter Leathers Jackets</a></div>
+                            <div class="product-main-box-content__rate">
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                            </div>
+                            <div class="product-main-box-content__price">
+                              <div class="product-main-box-content__price-new">$32.00</div>
+                              <div class="product-main-box-content__price-old">$45.00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-3 m-6 c-12 gutters_plr-15">
+                        <div class="product-main-box">
+                          <div class="product-main-box-banner">
+                            <img src="./assets/img/products/sports-2.jpg" width="300" alt="" class="product-main-box-banner__img default">
+                            <img src="./assets/img/products/sports-4.jpg" width="300" alt="" class="product-main-box-banner__img hover">
+                            <div class="product-main-box-banner__angle black">sale</div>
+                            <div class="product-main-box-banner__actions">
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="heart-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="bag-add-outline"></ion-icon>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-main-box-content">
+                            <div class="product-main-box-content__title"><a href="">sports</a></div>
+                            <div class="product-main-box-content__description"><a href="">Trekking & Running Shoes - black</a></div>
+                            <div class="product-main-box-content__rate">
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                            </div>
+                            <div class="product-main-box-content__price">
+                              <div class="product-main-box-content__price-new">$58.00</div>
+                              <div class="product-main-box-content__price-old">$64.00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-3 m-6 c-12 gutters_plr-15">
+                        <div class="product-main-box">
+                          <div class="product-main-box-banner">
+                            <img src="./assets/img/products/shoe-1.jpg" width="300" alt="" class="product-main-box-banner__img default">
+                            <img src="./assets/img/products/shoe-1_1.jpg" width="300" alt="" class="product-main-box-banner__img hover">
+                            <div class="product-main-box-banner__actions">
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="heart-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="bag-add-outline"></ion-icon>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-main-box-content">
+                            <div class="product-main-box-content__title"><a href="">formal</a></div>
+                            <div class="product-main-box-content__description"><a href="">Men's Leather Formal Wear shoes</a></div>
+                            <div class="product-main-box-content__rate">
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                            </div>
+                            <div class="product-main-box-content__price">
+                              <div class="product-main-box-content__price-new">$50.00</div>
+                              <div class="product-main-box-content__price-old">$65.00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col l-3 m-6 c-12 gutters_plr-15">
+                        <div class="product-main-box">
+                          <div class="product-main-box-banner">
+                            <img src="./assets/img/products/shorts-1.jpg" width="300" alt="" class="product-main-box-banner__img default">
+                            <img src="./assets/img/products/shorts-2.jpg" width="300" alt="" class="product-main-box-banner__img hover">
+                            <div class="product-main-box-banner__angle black">sale</div>
+                            <div class="product-main-box-banner__actions">
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="heart-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </div>
+                              <div class="product-main-box-banner__actions-item">
+                                <ion-icon name="bag-add-outline"></ion-icon>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-main-box-content">
+                            <div class="product-main-box-content__title"><a href="">shorts</a></div>
+                            <div class="product-main-box-content__description"><a href="">Better Basics French Terry Sweatshorts</a></div>
+                            <div class="product-main-box-content__rate">
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star" role="img" class="md hydrated" aria-label="star"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                              <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
+                            </div>
+                            <div class="product-main-box-content__price">
+                              <div class="product-main-box-content__price-new">$78.00</div>
+                              <div class="product-main-box-content__price-old">$85.00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+              </div>
+            </div>  
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col l-3 m-12 c-12">
+                <div class="info-testimonial">
+                  <div class="info-testimonial__label">Testimonial</div>
+                  <div class="info-testimonial__box">
+                    <img src="./assets/img/testimonial-1.jpg" width="80" height="80" alt="" class="info-testimonial__box-img"></img>
+                    <div class="info-testimonial__box-name">ALAN DOE</div>
+                    <div class="info-testimonial__box-position">CEO & Founder Invision</div>
+                    <img src="./assets/img/icons/quotes.svg" width="26" class="info-testimonial__box-icon"></img>
+                    <div class="info-testimonial__box-description">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-6 m-12 c-12">
+                <div style="background-image: url(./assets/img/cta-banner.jpg);" class="info-cta">
+                  <div class="info-cta__box">
+                    <div class="info-cta__box-discount">25% Discount</div>
+                    <h2 class="info-cta__box-title">Summer collection</h2>
+                    <div class="info-cta__box-text">Starting @ $10</div>
+                    <div class="info-cta__box-btn">Shop now</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-12 c-12">
+                <div class="info-service">
+                  <div class="info-service__label">Our Services</div>
+                  <div class="info-service__box">
+                    <a href="#" class="info-service__box-wrap">
+                      <div class="info-service__box-icon">
+                        <ion-icon name="boat-outline" role="img" class="md hydrated" aria-label="boat outline"></ion-icon>
+                      </div>
+                      <div class="info-service__box-content">
+                        <h3 class="info-service__box-content-title">Worldwide Delivery</h3>
+                        <div class="info-service__box-content-description">For Order Over $100</div>
+                      </div>
+                    </a>
+                    <a href="#" class="info-service__box-wrap">
+                      <div class="info-service__box-icon">
+                        <ion-icon name="rocket-outline" role="img" class="md hydrated" aria-label="rocket outline"></ion-icon>
+                      </div>
+                      <div class="info-service__box-content">
+                        <h3 class="info-service__box-content-title">Next Day delivery</h3>
+                        <div class="info-service__box-content-description">UK Orders Only</div>
+                      </div>
+                    </a>
+                    <a href="#" class="info-service__box-wrap">
+                      <div class="info-service__box-icon">
+                        <ion-icon name="call-outline" role="img" class="md hydrated" aria-label="call outline"></ion-icon>
+                      </div>
+                      <div class="info-service__box-content">
+                        <h3 class="info-service__box-content-title">Best Online Support</h3>
+                        <div class="info-service__box-content-description">Hours: 8AM - 11PM</div>
+                      </div>
+                    </a>
+                    <a href="#" class="info-service__box-wrap">
+                      <div class="info-service__box-icon">
+                        <ion-icon name="arrow-undo-outline" role="img" class="md hydrated" aria-label="arrow undo outline"></ion-icon>
+                      </div>
+                      <div class="info-service__box-content">
+                        <h3 class="info-service__box-content-title">Return Policy</h3>
+                        <div class="info-service__box-content-description">Easy & Free Return</div>
+                      </div>
+                    </a>
+                    <a href="#" class="info-service__box-wrap">
+                      <div class="info-service__box-icon">
+                        <ion-icon name="ticket-outline" role="img" class="md hydrated" aria-label="ticket outline"></ion-icon>
+                      </div>
+                      <div class="info-service__box-content">
+                        <h3 class="info-service__box-content-title">30% money back</h3>
+                        <div class="info-service__box-content-description">30% money back</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>       
+        
+        <div class="blog">
+          <div class="grid wide">
+            <div class="row has-scrollbar">
+              <div class="col l-3 m-6 c-12">
+                <div class="blog-box">
+                  <a href=""><img src="./assets/img/blog-1.jpg" width="300" alt="" class="blog-box__img"></img></a>
+                  <div class="blog-box__content">
+                    <div class="blog-box__content-category"><a href="">Fashion</a></div>
+                    <div class="blog-box__content-title"><a href="">Clothes Retail KPIs 2021 Guide for Clothes Executives.</a></div>
+                    <p class="blog-box__content-meta">
+                      By <cite>Mr Admin</cite> / <time datetime="2022-04-06">Apr 06, 2022</time>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="blog-box">
+                  <a href=""><img src="./assets/img/blog-2.jpg" width="300" alt="" class="blog-box__img"></img></a>
+                  <div class="blog-box__content">
+                    <div class="blog-box__content-category"><a href="">Clothes</a></div>
+                    <div class="blog-box__content-title"><a href="">Curbside fashion Trends: How to Win the Pickup Battle.</a></div>
+                    <p class="blog-box__content-meta">
+                      By <cite>Mr Robin</cite> / <time datetime="2022-04-06">Jan 18, 2022</time>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="blog-box">
+                  <a href=""><img src="./assets/img/blog-3.jpg" width="300" alt="" class="blog-box__img"></img></a>
+                  <div class="blog-box__content">
+                    <div class="blog-box__content-category"><a href="">Shoes</a></div>
+                    <div class="blog-box__content-title"><a href="">EBT vendors: Claim Your Share of SNAP Online Revenue.</a></div>
+                    <p class="blog-box__content-meta">
+                      By <cite>Mr Selsa</cite> / <time datetime="2022-04-06">Feb 10, 2022</time>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-3 m-6 c-12">
+                <div class="blog-box">
+                  <a href=""><img src="./assets/img/blog-4.jpg" width="300" alt="" class="blog-box__img"></img></a>
+                  <div class="blog-box__content">
+                    <div class="blog-box__content-category"><a href="">Electronics</a></div>
+                    <div class="blog-box__content-title"><a href="">Curbside fashion Trends: How to Win the Pickup Battle.</a></div>
+                    <p class="blog-box__content-meta">
+                      By <cite>Mr Pawar</cite> / <time datetime="2022-04-06">Mar 15, 2022</time>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <footer id="footer">
+        <div class="footer-category">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col l-12 m-12 c-12">
+                <h2 class="footer-category__label">BRAND DIRECTORY</h2>
+                <div class="footer-category__box">
+                  <h3 class="footer-category__box-title">FASHION :</h3>
+                  <ul class="footer-category__box-list">
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">T-Shirt</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Shirts</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Shorts & Jeans</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Dress & Frock</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Innerwear</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Hosiery</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Jacket</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-category__box">
+                  <h3 class="footer-category__box-title">FOOTWEAR :</h3>
+                  <ul class="footer-category__box-list">
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Sport</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Formal</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Boots</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Casual</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Cowboy Shoes</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Safety Shoes</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Party Wear Shoes</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Branded</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Firstcopy</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Long Shoes</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-category__box">
+                  <h3 class="footer-category__box-title">JEWELLERY :</h3>
+                  <ul class="footer-category__box-list">
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Necklace</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Earrings</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Couple Rings</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Pendants</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Crystal</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Bangles</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Bracelets</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Nosepin</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Chain</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Earrings</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Couple Rings</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-category__box">
+                  <h3 class="footer-category__box-title">COSMETICS :</h3>
+                  <ul class="footer-category__box-list">
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Shampoo</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Bodywash</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Facewash</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Makeup Kit</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Liner</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Lipstick</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Prefume</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Body Soap</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Scrub</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Hair Gel</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Hair Colors</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Hair Dye</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Sunscreen</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Skin Loson</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Liner</a>
+                    </li>
+                    <li class="footer-category__box-item">
+                      <a href="" class="footer-category__box-item-link">Lipstick</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <div class="grid wide">
+            <div class="row row_gap-50">
+              <div class="col l-2-4 m-4 c-12">
+                <div class="footer-nav-box">
+                  <h2 class="footer-nav-box__label">POPULAR CATEGORIES</h2>
+                  <ul class="footer-nav-box__list">
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Fashion</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Electronic</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Cosmetic</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Health</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Watches</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col l-2-4 m-4 c-12">
+                <div class="footer-nav-box">
+                  <h2 class="footer-nav-box__label">PRODUCTS</h2>
+                  <ul class="footer-nav-box__list">
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Prices Drop</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">New Products</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Best Sales</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Contact Us</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Sitemap</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col l-2-4 m-4 c-12">
+                <div class="footer-nav-box">
+                  <h2 class="footer-nav-box__label">OUR COMPANY</h2>
+                  <ul class="footer-nav-box__list">
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Delivery</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Legal Notice</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Terms And Conditions</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">About Us</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Secure Payment</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col l-2-4 m-4 c-12">
+                <div class="footer-nav-box">
+                  <h2 class="footer-nav-box__label">SERVICES</h2>
+                  <ul class="footer-nav-box__list">
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Prices Drop</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">New Products</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Best Sales</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Contact Us</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">Sitemap</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col l-2-4 m-4 c-12">
+                <div class="footer-nav-box">
+                  <h2 class="footer-nav-box__label">CONTACT</h2>
+                  <ul class="footer-nav-box__list">
+                    <li class="footer-nav-box__item">
+                      <ion-icon name="location-outline" role="img" class="md hydrated" aria-label="location outline"></ion-icon>
+                      <a href="" class="footer-nav-box__item-link no-cursor">419 State 414 Rte Beaver Dams, New York(NY), 14812, USA</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <ion-icon name="call-outline" role="img" class="md hydrated" aria-label="call outline"></ion-icon>
+                      <a href="" class="footer-nav-box__item-link">(607) 936-8058</a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <ion-icon name="mail-outline" role="img" class="md hydrated" aria-label="mail outline"></ion-icon>
+                      <a href="" class="footer-nav-box__item-link">Example@Gmail.Com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col l-2-4 m-4 c-12 hide-on-tablet hide-on-pc">
+                <div class="footer-nav-box">
+                  <h2 class="footer-nav-box__label">FOLLOW US</h2>
+                  <ul class="footer-nav-box__list_icon">
+                    <li class="footer-nav-box__item">         
+                      <a href="" class="footer-nav-box__item-link no-cursor">
+                        <ion-icon name="logo-facebook" role="img" class="md hydrated" aria-label="logo facebook"></ion-icon>
+                      </a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">
+                        <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
+                      </a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">
+                        <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
+                      </a>
+                    </li>
+                    <li class="footer-nav-box__item">
+                      <a href="" class="footer-nav-box__item-link">
+                        <ion-icon name="logo-instagram" role="img" class="md hydrated" aria-label="logo instagram"></ion-icon>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col l-12 m-12 c-12">
+                <div class="footer-bottom-box">
+                  <img src="/assets/img/payment.png" alt="" class="footer-bottom-box__payment">
+                  <div class="footer-bottom-box__copyright">Copyright © Anon All Rights Reserved.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./javascript.js"></script>
+
+  </body>
+</html>
